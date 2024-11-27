@@ -95,7 +95,6 @@ class ImageProcessingBot(Bot):
                 return
 
         # Handle media group (multiple images)
-        # Handle media group (multiple images)
         if "media_group_id" in msg:
             caption = msg.get('caption', '').strip().lower()  # Safely get caption or empty string
             self.concat_proof.append(caption)
