@@ -153,7 +153,7 @@ class ImageProcessingBot(Bot):
 
             try:
                 photo_path = self.download_user_photo(msg)
-                processed_path = f"{photo_path.replace('.jpg', '')}_filtered.jpg"
+                processed_path = f"{photo_path.replace('.jpeg', '')}_filtered.jpeg"
 
                 if caption == "concat":
                     self.send_text(chat_id, "Error: You must send two images to use the 'concat' command.")
